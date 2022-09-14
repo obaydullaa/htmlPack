@@ -1,0 +1,396 @@
+
+/*==========================================================================
+Common Css
+==========================================================================*/
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+  color: #CFD0D0;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+
+a {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button,
+i {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-padding {
+  padding: 150px 0px;
+}
+
+@media (max-width: 575px) {
+  .section-padding {
+    padding: 90px 0px;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.img__full {
+  width: 100%;
+}
+
+/*==========================================================================
+Form
+==========================================================================*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid #272A2A;
+  border-color: transparent;
+  border-radius: 0px;
+  background: #F94D1D;
+  color: #FFFFFF;
+  line-height: 1;
+  padding: 0.6em 1em 0.4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: transparent;
+}
+
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  border-color: transparent;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  color: #333;
+  border: 1px solid;
+  border-radius: 0px;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #272A2A;
+  background: #FFFFFF;
+  padding-left: 20px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  color: #333;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #4caf50;
+}
+
+select {
+  border: 1px solid #3F4144;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding-top: 15px;
+}
+
+button,
+button:hover,
+button:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+/*==========================================================================
+Hedging CSS
+==========================================================================*/
+h1 {
+  font-size: 84px;
+  line-height: 94px;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 48px;
+  line-height: 58px;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  line-height: 40px;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 34px;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0;
+  margin: 0;
+  color: #9FA0A1;
+  font-family: "Inter", sans-serif;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 46px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 530px) {
+  h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 460px) {
+  h2 {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}
+
+@media (max-width: 430px) {
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  h4 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+/*==========================================================================
+Theme Btn CSS
+==========================================================================*/
+.theme-btn,
+.theme-btn-1 {
+  background: #F94D1D;
+  color: #FFFFFF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-size: 16px;
+  padding: 0 35px;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  z-index: 3;
+  border: 1px solid transparent;
+  position: relative;
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 60px;
+  overflow: hidden;
+}
+
+.theme-btn::after,
+.theme-btn-1::after {
+  position: absolute;
+  content: '';
+  position: absolute;
+  width: 0;
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+.theme-btn i::before,
+.theme-btn-1 i::before {
+  font-size: 22px;
+  margin-left: 10px;
+  top: 1px;
+  position: relative;
+}
+
+.theme-btn:hover,
+.theme-btn-1:hover {
+  color: #FFFFFF;
+  border: 1px solid #F94D1D;
+}
+
+.theme-btn:hover::after,
+.theme-btn-1:hover::after {
+  width: 100%;
+}
+
+.theme-btn:focus,
+.theme-btn-1:focus {
+  color: #FFFFFF;
+}
+
+.theme-btn {
+  background: #005BA4;
+}
+
+.theme-btn:hover {
+  color: #030404;
+}
+
+.theme-btn::after {
+  background: #FFFFFF;
+}
+
+.theme-btn-1 {
+  background: #F94D1D;
+}
+
+.theme-btn-1:hover {
+  color: #030404;
+}
+
+.theme-btn-1::after {
+  background: #FFFFFF;
+}
+
+.simple-btn {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-transform: capitalize;
+}
+
+.simple-btn i {
+  position: relative;
+  top: 1px;
+  margin-left: 8px;
+}
+
+.simple-btn:hover {
+  color: #F94D1D;
+}
+
+/* <a class="theme-btn-1" href="#">All Project 
+<i class="fal fa-long-arrow-right"></i></a> */
+
